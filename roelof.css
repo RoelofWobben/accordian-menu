@@ -77,7 +77,7 @@ body {
 
 hr{
     height: 1px; 
-    background-color: blue;
+    color: var(--light_grayish_blue); 
     margin-bottom: 10px;  
 }
 
