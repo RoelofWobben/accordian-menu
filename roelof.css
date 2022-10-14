@@ -74,7 +74,7 @@ button{
     padding: 2rem; 
     margin: 2rem; 
     position: relative;
-    padding-left: 20px; 
+    padding-left: 20px;  
     padding-right: 40px;
     border-radius: 20px;
     width: 375px;       
@@ -124,4 +124,59 @@ hr{
     height: 1px; 
     color: var(--light_grayish_blue); 
     margin-bottom: 10px;  
+}
+
+@media screen and (min-width: 1000px){
+
+    .container {
+        width: 1000px;
+        display: flex; 
+        flex-direction: row-reverse;  
+    }
+
+    .questions{
+        justify-items: end;
+    }
+
+    .text{
+        margin-top: 40px; 
+    }
+
+    .container {
+        overflow: hidden;
+
+    }
+
+    .container:before {
+        position: absolute;
+        content: '';
+        display: block;
+        top: 0.5rem;  
+        right: 15px; 
+        width: 300px;
+        max-width: 100%;
+        height: 100%; 
+        background-image: none; 
+        background-repeat: no-repeat;
+           
+    }
+    
+    .container:after{
+        background-image: none; 
+        position: absolute;
+        content: '';
+        display: block;
+        top: -6.6rem;  
+        right: 40px; 
+        width: 300px;
+        max-width: 100%;
+        height: 100%; 
+        background-repeat: no-repeat;
+    }
+
+   
+
+    
+
+    
 }
