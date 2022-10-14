@@ -15,61 +15,63 @@
 </head>
 <body>
     <div class="container">
-        <div class="logo-container">
-            <img src="./images/illustration-woman-online-mobile.svg" class="logo">
-            <img src="./images/bg-pattern-mobile.svg" class="background_logo">
-        </div>
         <div class="text">
             <h1>FAQ</h1>
         </div>
-        <div class="question">
-            <div class="question_header">
-               <p> How many team members can I invite?</p>
-               <img src="./images/icon-arrow-down.svg" class="icon">
-            </div>
-            <div class="question_answer">
-                <p>
-                    You can invite up to 2 additional users on the Free plan. There is no limit on 
-                    team members for the Premium plan.
-                </p>    
-            </div>
-        </div>
-        <hr>
-        <div class="question">
-            <div class="question_header">
-               <p>  What is the maximum file upload size?</p>
-               <img src="./images/icon-arrow-down.svg" class="icon">
-            </div>
-            <div class="question_answer">
-                <p>No more than 2GB. All files in your account must fit your allotted storage space.</p>
-            </div>
-        </div>
-        <div class="question">
-            <div class="question_header">
-               <p>  How do I reset my password? </p>
-               <img src="./images/icon-arrow-down.svg" class="icon">
-            </div>
-            <div class="question_answer">
-                <p>
+        <ul>
+            <li class="question">
+                <button type="button" class="faq-btn" aria-expanded="false" aria-controls="answer1">
+                    <span> How many team members can I invite?</span>
+                    <img src="./images/icon-arrow-down.svg" alt="" class="icon">
+                </button>    
+                    <div id="answer1" class="question_answer" hidden >
+                    <p>
+                        You can invite up to 2 additional users on the Free plan. There is no limit on team members for the Premium plan.
+                    </p>    
+                </div>
+            </li>
+            <hr>
+
+            <li class="question">
+                <button type="button" class="faq-btn" aria-expanded="false" aria-controls="answer2">
+                    <span> What is the maximum file upload size?</span>
+                    <img src="./images/icon-arrow-down.svg" alt="" class="icon">
+                </button>    
+                <div id="answer2" class="question_answer">
+                  <p>
+                    No more than 2GB. All files in your account must fit your allotted storage space.
+                  </p>    
+                </div>
+            </li>
+            <hr>
+
+            <li class="question">
+                <button type="button" class="faq-btn" aria-expanded="false" aria-controls="answer3">
+                    <span> How do I reset my password?</span>
+                    <img src="./images/icon-arrow-down.svg" alt="" class="icon">
+                </button>    
+                <div id="answer3" class="question_answer" hidden>
+                  <p>
                     Click “Forgot password” from the login page or “Change password” from your profile page.
                     A reset link will be emailed to you.
-                </p>
-            </div>
-        </div>
-        <hr>
-        <div class="question">
-            <div class="question_header">
-               <p> Do you provide additional support?</p>
-               <img src="./images/icon-arrow-down.svg" class="icon">
-            </div>
-            <div class="question_answer">
-                <p>
+                  </p>    
+                </div>
+            </li>
+            <hr>
+
+            <li class="question">
+                <button type="button" class="faq-btn" aria-expanded="false" aria-controls="answer4">
+                    <span> Do you provide additional support?</span>
+                    <img src="./images/icon-arrow-down.svg" alt="" class="icon">
+                </button>    
+                <div id="answer4" class="question_answer" hidden>
+                  <p>
                     Chat and email support is available 24/7. Phone lines are open during normal business hours.
-                </p>
-            </div>
-        </div>
-        
-    </div>
+                  </p>    
+                </div>
+            </li>
+            <hr>
+        </ul>
 </body>
 </html>
 
