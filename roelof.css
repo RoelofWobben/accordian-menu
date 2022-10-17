@@ -131,11 +131,13 @@ hr{
     .container {
         width: 1000px;
         display: flex; 
-        flex-direction: row-reverse;  
+        flex-direction: row-reverse;
+        padding: 0px;   
     }
 
     .questions{
-        justify-items: end;
+        width: 50%;
+        padding: 2rem;
         width: 50%; 
     }
 
@@ -145,6 +147,7 @@ hr{
 
     .container {
         overflow: hidden;
+        margin: 0px; 
 
     }
 
@@ -157,7 +160,7 @@ hr{
         width: 300px;
         max-width: 100%;
         height: 100%; 
-        background-image: none; 
+        background-image: none;
         background-repeat: no-repeat;
            
     }
@@ -175,6 +178,9 @@ hr{
         background-repeat: no-repeat;
     }
 
+    
+
+    
    
 
     
