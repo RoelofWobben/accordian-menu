@@ -3,24 +3,20 @@ buttons = document.querySelectorAll('.faq-btn');
 // make the eventListeners 
 
 buttons.forEach(button => {
-    button.addEventListener('click', () =>{
-    
-        let x = button.getAttribute("aria-expanded");
-        var tekst_id = button.getAttribute("aria-controls");
-        var tekst_element = document.getElementById(tekst_id);
-
-        if (x === "true"){
-            x = "false";
-            tekst_element.setAttribute("hidden","true");
-        } else {
-            x = "true";
-            tekst_element.removeAttribute("hidden");
+    button.addEventListener('click', (e) =>{
+        let target = e.currentTarget; 
+        let collapsed = (e.currentTarget).getAttribute('aria-expanded'); 
+        if (collapsed === "true"){
+            target.setAttribute('aria-expanded', 'false');
+            
         }
-        button.setAttribute("aria-expanded", x);  
+        else {
+         
+            target.setAttribute('aria-expanded', 'true'); 
+        }
+    
     })
 });  
 
 
         
-
-gi

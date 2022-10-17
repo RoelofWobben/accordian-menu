@@ -126,6 +126,14 @@ hr{
     margin-bottom: 10px;  
 }
 
+.faq-btn[aria-expanded="false"] + .question_answer {
+    visibility: hidden;  
+  }
+  
+  .faq-btn[aria-expanded="true"] + .question_answer {
+    visibility: visible; 
+  }
+
 @media screen and (min-width: 1000px){
 
     .container {
