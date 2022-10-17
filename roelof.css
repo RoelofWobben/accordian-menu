@@ -120,6 +120,8 @@ button{
     height: 1rem;
 }
 
+
+
 hr{
     height: 1px; 
     color: var(--light_grayish_blue); 
@@ -129,8 +131,12 @@ hr{
 .faq-btn[aria-expanded="false"] + .question_answer {
     visibility: hidden;  
   }
-  
-  .faq-btn[aria-expanded="true"] + .question_answer {
+
+  .faq-btn[aria-expanded="true"] > .icon {
+    transform: rotate(180deg);    
+ }
+
+.faq-btn[aria-expanded="true"] + .question_answer {
     visibility: visible; 
   }
 
