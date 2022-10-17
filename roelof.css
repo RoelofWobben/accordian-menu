@@ -136,6 +136,7 @@ hr{
 
     .questions{
         justify-items: end;
+        width: 50%; 
     }
 
     .text{
