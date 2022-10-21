@@ -5,9 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+ 
   <link href="./roelof.css" rel="stylesheet">
   <title>Frontend Mentor | FAQ Accordion Card</title>
 
@@ -15,35 +13,38 @@
 </head>
 <body>
     <div class="container">
-        <div class="questions">
-            <div class="text">
+        <div class="picture">
+            <img src="./images/illustration-woman-online-mobile.svg" class=" woman"></img>
+            <img src="./images/bg-pattern-mobile.svg" class="background"></img> 
+        </div>
+        <div class="text">
+            <div class="FAQ">
                 <h1>FAQ</h1>
             </div>
-                <ul>
-                    <li class="question">
-                        <button type="button" class="faq-btn" aria-expanded="false" aria-controls="answer1">
-                            <span> How many team members can I invite?</span>
-                            <img src="./images/icon-arrow-down.svg" alt="" class="icon">
-                        </button>    
-                        <div id="answer1" class="question_answer">
-                            <p>
-                                You can invite up to 2 additional users on the Free plan. There is no limit on team members for the Premium plan.
-                            </p>    
-                        </div>
-                    </li>
-                    <hr>
+            <div class="questions">
+                <div class="question">
+                   <label for="question1"> How many team members can I invite? </label>
+                   <input type="checkbox" id="question">
+                   <span><img src="./images/icon-arrow-down.svg"> </span>
+                   <p>
+                       You can invite up to 2 additional users on the Free plan. There is no limit on team members for the Premium plan.
+                   </p> 
+                </div>
+                
 
-                    <li class="question">
-                        <button type="button" class="faq-btn" aria-expanded="false" aria-controls="answer2">
-                            <span> What is the maximum file upload size?</span>
-                            <img src="./images/icon-arrow-down.svg" alt="" class="icon">
-                        </button>    
-                        <div id="answer2" class="question_answer">
-                            <p>
-                                No more than 2GB. All files in your account must fit your allotted storage space.
-                            </p>    
-                        </div>
-                    </li>
+               
+
+                <li class="question">
+                    <button type="button" class="faq-btn" aria-expanded="false" aria-controls="answer2">
+                        <span> What is the maximum file upload size?</span>
+                        <img src="./images/icon-arrow-down.svg" alt="" class="icon">
+                    </button>    
+                    <div id="answer2" class="question_answer">
+                        <p>
+                            No more than 2GB. All files in your account must fit your allotted storage space.
+                        </p>    
+                    </div>
+                </li>
                 <hr>
 
                 <li class="question">
@@ -72,7 +73,9 @@
                     </div>
                 </li>
                 <hr>
-            </ul>
+
+                </ul>
+            </div>
         </div>
     </div>
     <script type="text/javascript" src="./roelof.js"> </script>    

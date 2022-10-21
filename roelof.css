@@ -55,59 +55,32 @@ p{
     padding-right: 40px;  
 }
 
-img{
-   max-width: 100%; 
-   display: block;
-}
 
-hr{
-    color: #f9f9fd;
-    margin-bottom: 20px;
-}
-
-button{
-    gap: 0.5rem; 
-}
 
 .container {
+    width: 355px;
     background-color: white; 
-    padding: 2rem; 
-    margin: 2rem; 
+    padding: 20px; 
+    margin: 10px; 
     position: relative;
     padding-left: 20px;  
-    padding-right: 40px;
+    padding-right: 20px;
     border-radius: 20px;
     width: 375px;       
 }
-
-.container:before {
+.woman {
     position: absolute;
-    content: '';
-    display: block;
-    top: 0.5rem;  
-    right: 15px; 
-    width: 300px;
-    max-width: 100%;
-    height: 100%; 
-    background-image: url('./images/bg-pattern-mobile.svg');
-    background-repeat: no-repeat;
-       
+    left: 45px;
+    top: -105px;
 }
 
-.container:after{
-    background-image: url('./images/illustration-woman-online-mobile.svg');
-    position: absolute;
-    content: '';
-    display: block;
-    top: -6.6rem;  
-    right: 40px; 
-    width: 300px;
-    max-width: 100%;
-    height: 100%; 
-    background-repeat: no-repeat;
+.background{
+    position: absolute; 
+    left: 70px;
+    top: 5px;  
 }
 
-.text {
+.FAQ {
     text-align: center;
     margin-bottom: 30px;
     margin-top: 120px; 
@@ -115,30 +88,32 @@ button{
     font-weight: 700;    
 }
 
-.icon {
+.icon{    
     width: 1rem; 
     height: 1rem;
-}
+    display: block;
+ }
 
-
-
-hr{
-    height: 1px; 
-    color: var(--light_grayish_blue); 
-    margin-bottom: 10px;  
+ button{
+    gap: 0.5rem; 
 }
 
 .faq-btn[aria-expanded="false"] + .question_answer {
-    visibility: hidden;  
-  }
+    visibility: hidden;
+    max-height: 0px;
+    transition: max-height 0.3s easy-out; 
+}
 
   .faq-btn[aria-expanded="true"] > .icon {
     transform: rotate(180deg);    
  }
 
 .faq-btn[aria-expanded="true"] + .question_answer {
-    visibility: visible; 
-  }
+    visibility: visible;
+    max-height: 50px;
+    transition: max-height 0.25s easy-in;  
+} 
+  
 
 @media screen and (min-width: 1000px){
 
