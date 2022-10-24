@@ -12,10 +12,18 @@
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
 </head>
 <body>
+    <img src="./images/illustration-box-desktop.svg" class="box">
     <div class="container">
+        
         <div class="picture">
-            <img src="./images/illustration-woman-online-mobile.svg" class=" woman"></img>
-            <img src="./images/bg-pattern-mobile.svg" class="background"></img> 
+            <picture>
+                <source media="(max-width:1000px)" srcset="./images/illustration-woman-online-mobile.svg" class="woman">
+                <img src="./images/illustration-woman-online-desktop.svg" class="woman">
+            </picture>
+            <picture>
+                <source media="(max-width:1000px)" srcset="./images/bg-pattern-mobile.svg" class="background">
+                <img src="./images/bg-pattern-desktop.svg" class="background">
+            </picture>
         </div>
         <div class="text">
             <div class="FAQ">
@@ -23,58 +31,50 @@
             </div>
             <div class="questions">
                 <div class="question">
-                   <label for="question1"> How many team members can I invite? </label>
-                   <input type="checkbox" id="question">
-                   <span><img src="./images/icon-arrow-down.svg"> </span>
-                   <p>
+                    <label for="question1"> 
+                        <span>
+                            How many team members can I invite?
+                            <img src="./images/icon-arrow-down.svg">
+                        </span>
+                    </label>
+                    <input type="checkbox" id="question1">
+                    <p>
                        You can invite up to 2 additional users on the Free plan. There is no limit on team members for the Premium plan.
                    </p> 
                 </div>
-                
-
-               
-
-                <li class="question">
-                    <button type="button" class="faq-btn" aria-expanded="false" aria-controls="answer2">
-                        <span> What is the maximum file upload size?</span>
-                        <img src="./images/icon-arrow-down.svg" alt="" class="icon">
-                    </button>    
-                    <div id="answer2" class="question_answer">
-                        <p>
-                            No more than 2GB. All files in your account must fit your allotted storage space.
-                        </p>    
-                    </div>
-                </li>
-                <hr>
-
-                <li class="question">
-                    <button type="button" class="faq-btn" aria-expanded="false" aria-controls="answer3">
-                        <span> How do I reset my password?</span>
-                        <img src="./images/icon-arrow-down.svg" alt="" class="icon">
-                    </button>    
-                    <div id="answer3" class="question_answer">
-                    <p>
+                <div class="question">
+                    <label for="question2"> 
+                        <span>
+                            What is the maximum file upload size?
+                            <img src="./images/icon-arrow-down.svg">
+                        </span>
+                    </label>
+                    <input type="checkbox" id="question2">
+                    <p>  No more than 2GB. All files in your account must fit your allotted storage space.</p> 
+                </div>
+                <div class="question">
+                    <label for="question3">
+                        <span>
+                            How do I reset my password?
+                            <img src="./images/icon-arrow-down.svg">
+                        </span>
+                    </label>         
+                    <input type="checkbox" id="question3">
+                    <p> 
                         Click “Forgot password” from the login page or “Change password” from your profile page.
                         A reset link will be emailed to you.
-                    </p>    
-                    </div>
-                </li>
-                <hr>
-
-                <li class="question">
-                    <button type="button" class="faq-btn" aria-expanded="false" aria-controls="answer4">
-                        <span> Do you provide additional support?</span>
-                        <img src="./images/icon-arrow-down.svg" alt="" class="icon">
-                    </button>    
-                    <div id="answer4" class="question_answer">
-                    <p>
-                        Chat and email support is available 24/7. Phone lines are open during normal business hours.
-                    </p>    
-                    </div>
-                </li>
-                <hr>
-
-                </ul>
+                    </p> 
+                </div>
+                <div class="question">
+                    <label for="question4"> 
+                        <span>
+                            Do you provide additional support?
+                            <img src="./images/icon-arrow-down.svg">
+                        </span>
+                    </label>         
+                    <input type="checkbox" id="question4">
+                    <p> Chat and email support is available 24/7. Phone lines are open during normal business hours</p> 
+                </div>
             </div>
         </div>
     </div>
