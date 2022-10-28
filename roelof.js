@@ -1,31 +1,35 @@
-buttons = document.querySelectorAll('.faq-btn'); 
+let checkboxes = document.querySelectorAll('input[type="checkbox"]');
 
 // make the eventListeners 
 
-buttons.forEach(button => {
-    button.addEventListener('click', (e) =>{
-       // close open questions
-        
-        buttons.forEach(button => {
-            button.setAttribute('aria-expanded', 'false')
-        }); 
 
-        // open the chosen question 
+checkboxes.forEach(checkbox => {
+    checkbox.addEventListener('click', (e) =>{
+       // Find elements 
+
+       let target = e.target; // chosen checkbox 
+               
+        // close open questions
         
-        let target = e.currentTarget;
-        let collapsed = (e.currentTarget).getAttribute('aria-expanded'); 
-        if (collapsed === "true"){
-            target.setAttribute('aria-expanded', 'false');
-            
-            
+        checkboxes.forEach(checkbox => {
+            if (target != checkbox) {
+                checkbox.checked = false 
+            }
+            let paragraph = checkbox.nextElementSibling 
+
+            paragraph.classList.remove('active') 
+        }); 
+        
+                  
+        //add class active to the chosen paragraph if p is chosen
+
+        let chosenParagraph = target.nextElementSibling; 
+           
+        if (target.checked) {
+            chosenParagraph.classList.add('active'); 
         }
-        else {
-         
-            target.setAttribute('aria-expanded', 'true');
-        }
-   
+        
     })
 });  
-
 
         
