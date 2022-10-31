@@ -15,7 +15,8 @@ checkboxes.forEach(checkbox => {
             if (target != checkbox) {
                 checkbox.checked = false 
             }
-            let paragraph = checkbox.nextElementSibling 
+            let paragraph = checkbox.parentElement.querySelector('p')  
+            console.log(paragraph);  
 
             paragraph.classList.remove('active') 
         }); 
@@ -23,7 +24,7 @@ checkboxes.forEach(checkbox => {
                   
         //add class active to the chosen paragraph if p is chosen
 
-        let chosenParagraph = target.nextElementSibling; 
+        let chosenParagraph = target.nextElementSibling.parentElement.querySelector('p') 
            
         if (target.checked) {
             chosenParagraph.classList.add('active'); 
